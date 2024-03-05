@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>하모 심리테스트</title>
+       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4308275769742745"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@700&family=Nanum+Gothic:wght@700&display=swap"
+        rel="stylesheet">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8560496054107183"
+        crossorigin="anonymous"></script>
+        <ins class="kakao_ad_area" style="display:none;"
+data-ad-unit = "DAN-hogKA8HoR2lwogLH"
+data-ad-width = "320"
+data-ad-height = "50"></ins>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
+</head>
+<style>
+    /*백그라운드 반복으로 이미지 불러오기*/
+
+
+    * {
+        width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    /*폰트 다 적용*/
+    body {
+        /*폰트 볼드로*/
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        /*백그라운드 이미지 bg.png로 리핏 없이  */
+        background-image: url("bg.png");
+        /*백그라운드 이미지 꽉차게 */
+        background-size: cover;
+        width: 100%;
+    }
+
+
+
+
+
+
+
+    /*yes/no 버튼 네모난 모양 약간 둥근 버튼으로 변경*/
+
+    .btn-success {
+        border-radius: 10px;
+        border-color: rgb(246, 149, 255);
+        background-color: rgb(246, 149, 255);
+        text-align: center;
+
+    }
+
+    .btn-danger {
+        border-radius: 10px;
+        border-color: rgb(246, 149, 255);
+        background-color: rgb(246, 149, 255);
+        text-align: center;
+
+    }
+
+
+
+    /*yes/no 버튼 크기 HEIGHT 25프로 정도*/
+    .btn-success {
+        height: 45%;
+        border-color: rgb(246, 149, 255);
+        background-color: rgb(246, 149, 255);
+        text-align: center;
+
+    }
+
+    .btn-danger {
+        height: 45%;
+    }
+
+    /*yes/no 버튼 색상 하얗게 투명하게*/
+
+    .btn-success {
+        border-color: rgb(89, 169, 193);
+        background-color: rgb(89, 169, 193);
+        text-align: center;
+
+    }
+
+    .btn-danger {
+        border-color: rgb(89, 169, 193);
+        background-color: rgb(89, 169, 193);
+    }
+
+    /* 마우스가 올라가 있을때 색상 변경*/
+    .btn-success:hover {
+        border-color: rgb(28, 27, 27);
+        background-color: rgba(207, 206, 220, 0.831);
+    }
+
+    .btn-danger:hover {
+        border-color: rgb(28, 27, 27);
+        background-color: rgba(207, 206, 220, 0.831);
+    }
+
+
+    /*yes/no 버튼 글자색 하얗게*/
+    .btn-success {
+        color: #545454;
+    }
+
+    .btn-danger {
+        color: #545454;
+    }
+
+    /*yes/no 버튼 글자 크기 조절*/
+
+    /* 버튼 사이 간격 주기*/
+    .btn-success {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+        margin: auto;
+    }
+
+    .btn-danger {
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    /*반응형 웹으로 만들기*/
+
+
+    /*반은형 웹으러 슬라이드 이미지 크기 조절*/
+    @media screen and (max-width: 768px) {
+        .AS {
+            margin: 20px;
+            height: 60%;
+            width: 100%;
+
+        }
+
+
+
+    }
+
+    .btn-success {
+        margin-top: 10%;
+        font-size: 300%;
+        width: 100%;
+    }
+
+    .btn-danger {
+        font-size: 300%;
+        width: 100%;
+    }
+
+    /*반응형 웹으로 이미지 크기 조절*/
+    @media screen and (max-width: 768px) {
+        .AS {
+            height: 60%;
+            width: 100%;
+        }
+    }
+
+    /*id가 BS인  하얀 동그란 형태로 변경*/
+
+
+
+
+
+
+    /*id가 awq인 div  margin-top이 20% margin-bottom이 20%로 변경*/
+    #awq {
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+
+
+    /*yes/no 버튼 애니매이션*/
+    .btn-success {
+        animation: mymove 1s infinite;
+    }
+
+    .btn-danger {
+        animation: mymove 1s infinite;
+    }
+
+    /*mymove  애니매이션  설정*/
+    @keyframes mymove {
+        0% {
+            background-color: #9ac7e1;
+            ;
+        }
+
+        50% {
+            background-color: #9ac7e1;
+            ;
+        }
+
+        100% {
+            background-color: #9ac7e1;
+            ;
+        }
+    }
+
+
+
+
+
+    /*question 가운데 정렬*/
+    #question {
+        text-align: center;
+    }
+</style>
+<script>
+
+
+    // yes/no버튼이 서서히 나오는 애니매이션
+    $(document).ready(function () {
+        $(".btn-success").hide();
+        $(".btn-danger").hide();
+        $(".btn-success").fadeIn(1000);
+        $(".btn-danger").fadeIn(1000);
+    });
+
+    // 슬라이드 넘어갈시 이미지, yes/no버튼이 서서히 나오는 애니매이션
+    $(document).ready(function () {
+        $("#myCarousel").on("slide.bs.carousel", function () {
+            $(".AS").hide();
+            $(".btn-success").hide();
+            $(".btn-danger").hide();
+            $(".btn-success").fadeIn(1000);
+            $(".btn-danger").fadeIn(1000);
+            $(".AS").fadeIn(1000);
+        });
+    });
+
+    // setInterval 슬라이드 넘어가는 시간 조절
+    $(document).ready(function () {
+        $("#myCarousel").carousel({
+            interval: 100000
+        });
+    });
+    // yes/no 버튼 클릭시 다음 슬라이드로 넘어가기
+    $(document).ready(function () {
+        $(".btn-success").click(function () {
+            $("#myCarousel").carousel("next");
+        });
+        $(".btn-danger").click(function () {
+            $("#myCarousel").carousel("next");
+        });
+    });
+    //id가 questionE인 div에 있는 btn-success 버튼을 클릭하면 변수 E에 1이 증가,No버튼을 클릭하면 변수 E에 1이 감소
+    var E = 0;
+    $(document).ready(function () {
+        $("#questionE .btn-success").click(function () {
+            E++;
+        });
+        $("#questionE .btn-danger").click(function () {
+            E--;
+        });
+    });
+    //id가 questionN인 div에 있는 btn-success 버튼을 클릭하면 변수 N에 1이 증가,No버튼을 클릭하면 변수 N에 1이 감소
+    var N = 0;
+    $(document).ready(function () {
+        $("#questionN .btn-success").click(function () {
+            N++;
+        });
+        $("#questionN .btn-danger").click(function () {
+            N--;
+        });
+    });
+
+    //id가 questionT인 div에 있는 btn-success 버튼을 클릭하면 변수 T에 1이 증가,No버튼을 클릭하면 변수 T에 1이 감소
+    var T = 0;
+    $(document).ready(function () {
+        $("#questionT .btn-success").click(function () {
+            T++;
+        });
+        $("#questionT .btn-danger").click(function () {
+            T--;
+        });
+    });
+
+    //id가 questionJ인 div에 있는 btn-success 버튼을 클릭하면 변수 J에 1이 증가,No버튼을 클릭하면 변수 J에 1이 감소
+    var J = 0;
+    $(document).ready(function () {
+        $("#questionJ .btn-success").click(function () {
+            J++;
+        });
+        $("#questionJ .btn-danger").click(function () {
+            J--;
+        });
+    });
+
+
+
+
+    // MBTI 결과값을 나타내는 j쿼리
+    function result(E, N, T, J) {
+        var result = "";
+        if (E > 0) {
+            result += "E";
+        } else {
+            result += "I";
+        }
+        if (N > 0) {
+            result += "N";
+        } else {
+            result += "S";
+        }
+        if (T > 0) {
+            result += "T";
+        } else {
+            result += "F";
+        }
+        if (J > 0) {
+            result += "J";
+        } else {
+            result += "P";
+        }
+        return result;
+    }
+    //id가 resulta인 div에 변수 result의 값 출력
+    $(document).ready(function () {
+        $("#resulta").html(result(E, N, T, J));
+    });
+
+    //id가 result인 div에 있는 버튼을 클릭하면 result(E, N, T, J)의 값에 따라 다른 페이지로 이동
+    $(document).ready(function () {
+        $("#result").click(function () {
+            if (result(E, N, T, J) == "ESTJ") {
+                location.href = "ESTJ/index.html";
+            } else if (result(E, N, T, J) == "ESTP") {
+                location.href = "ESTP/index.html";
+            } else if (result(E, N, T, J) == "ESFJ") {
+                location.href = "ESFJ/index.html";
+            } else if (result(E, N, T, J) == "ESFP") {
+                location.href = "ESFP/index.html";
+            } else if (result(E, N, T, J) == "ENTJ") {
+                location.href = "ENTJ/index.html";
+            } else if (result(E, N, T, J) == "ENTP") {
+                location.href = "ENTP/index.html";
+            } else if (result(E, N, T, J) == "ENFJ") {
+                location.href = "ENFJ/index.html";
+            } else if (result(E, N, T, J) == "ENFP") {
+                location.href = "ENFP/index.html";
+            } else if (result(E, N, T, J) == "ISTJ") {
+                location.href = "ISTJ/index.html";
+            } else if (result(E, N, T, J) == "ISTP") {
+                location.href = "ISTP/index.html";
+            } else if (result(E, N, T, J) == "ISFJ") {
+                location.href = "ISFJ/index.html";
+            } else if (result(E, N, T, J) == "ISFP") {
+                location.href = "ISFP/index.html";
+            } else if (result(E, N, T, J) == "INTJ") {
+                location.href = "INTJ/index.html";
+            } else if (result(E, N, T, J) == "INTP") {
+                location.href = "INTP/index.html";
+            } else if (result(E, N, T, J) == "INFJ") {
+                location.href = "INFJ/index.html";
+            } else if (result(E, N, T, J) == "INFP") {
+                location.href = "INFP/index.html";
+            }
+        });
+    });
+
+
+</script>
+<style>
+    /* questionE 가운데 정렬 */
+    #questionE {
+        text-align: center;
+    }
+
+    /* questionN 가운데 정렬 */
+    #questionN {
+        text-align: center;
+    }
+
+    /* questionT 가운데 정렬 */
+    #questionT {
+        text-align: center;
+    }
+
+    #questionJ {
+        text-align: center;
+    }
+
+    /*page-header 가운데 정렬*/
+    .page-header {
+        text-align: center;
+    }
+
+    /*page-header */
+
+    .page-header {
+        margin: 40px 0 20px;
+        border-bottom: 0px solid #3eaff1;
+    }
+</style>
+
+<body>
+    <div id="awq">
+        <!--상단 심리테스트 타이틀 생성-->
+        <div class="co">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header">
+                   S
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!--14개의 질문 슬라이드 -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+                            <!-- Wrapper for slides -->
+
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div id="question">
+
+                                        <div class="AS">  <video id="myVideo" class="video" playsinline autoplay loop muted  >
+                                            <source src="0.mp4" type="video/mp4">
+                                            <source src="0.mp4" type="video/ogg">
+                                            Your browser does not support HTML5 video.
+                                        </video></div>
+                                        <!--시작버튼-->
+                                        <div width="100%"> <button type="button" class="btn btn-success">시작</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item active">
+                                        <div id="questionE">
+                                            <!--동그란  문항들어갈 -->
+
+                                            <div class="AS">
+                                                <img src="1.png" alt="Chania" width="100%">
+                                            </div>
+                                            <!--YES/NO 버튼-->
+                                            <div width="100%"> <button type="button" class="btn btn-success">주말인데 나가서
+                                                    놀아야지 </button> </div>
+                                            <div width="100%"> <button type="button" class="btn btn-danger"
+                                                    width="100%">주말엔 집에서 쉬어야지</button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item active">
+                                        <div id="questionE">
+
+                                            <div class="AS"><img src="2.png" alt="Chania" width="100%"></div>
+                                            <!--YES/NO 버튼-->
+                                            <div width="100%"> <button type="button" class="btn btn-success">무조건 나가서
+                                                    길거리의 분위기를 느껴야지 </button> </div>
+                                            <div width="100%"> <button type="button" class="btn btn-danger"
+                                                    width="100%"> 집에서 나홀로 집에 해리포터 정주행!!! </button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item active">
+                                        <div id="questionE">
+
+                                            <div class="AS"><img src="3.png" alt="Chania" width="100%"></div>
+                                            <!--YES/NO 버튼-->
+                                            <div width="100%"> <button type="button" class="btn btn-success">  아 .. 기분이 안좋네 
+                                                </button> </div>
+                                            <div width="100%"> <button type="button" class="btn btn-danger"
+                                                    width="100%">오히려 좋아! </button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item active">
+                                        <div id="questionN">
+
+                                            <div class="AS"><img src="4.png" alt="Chania" width="100%"></div>
+                                            <!--YES/NO 버튼-->
+                                            <div width="100%"> <button type="button" class="btn btn-success">  음.. 나한테 관심 있나? </button> </div>
+                                            <div width="100%"> <button type="button" class="btn btn-danger"
+                                                    width="100%"> 내 얼굴에 뭐 묻었나? </button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item active">
+                                        <div id="questionN">
+                                            <div class="AS"><img src="5.png" alt="Chania" width="100%"></div>
+                                            <!--YES/NO 버튼-->
+                                            <div width="100%"> <button type="button" class="btn btn-success"> 아.. 혀 깨물면 안 죽겠지?  </button> </div>
+                                            <div width="100%"> <button type="button" class="btn btn-danger"
+                                                    width="100%"> 아 너무 세게 물었다.. 아프네..</button> </div>
+                                        </div>
+                                    </div>ㄴ
+                                </div>
+                                <div class="item">
+                                    <div class="item active">
+                                        <div id="questionN">
+                                            <div class="AS"><img src="6.png" alt="Chania" width="100%"></div>
+
+                                            <!--YES/NO 버튼-->
+                                            <div width="100%"> <button type="button" class="btn btn-success">상상들을 하다가
+                                                    스르륵… </button> </div>
+                                            <div width="100%"> <button type="button" class="btn btn-danger"
+                                                    width="100%">뭐할 시간 없이 피곤해 바로 잠듦</button> </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item active">
+                                        <div id="questionT">
+
+                                            <div class="AS"><img src="7.png" alt="Chania" width="100%"></div>
+                                            <!--YES/NO 버튼-->
+                                            <div><button type="button" class="btn btn-success">아 업무를 잘해서 커리어를 얻는 것이지
+                                                </button> </div>
+                                            <div width="100%"> <button type="button" class="btn btn-danger">인간관계로 커리어를
+                                                    쌓는 것이지 </button> </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item active">
+                                        <div id="questionT">
+
+                                            <div class="AS"><img src="8.png" alt="Chania" width="100%"></div>
+
+                                            <!--YES/NO 버튼-->
+                                            <div width="100%"> <button type="button" class="btn btn-success"> 어떤 준비 하는데?
+                                                    이력서는 넣었어??</button> </div>
+                                            <div width="100%"> <button type="button" class="btn btn-danger"
+                                                    width="100%">힘들지ㅠㅠ
+                                                    나도 그랬여... 뭔지 알것같다... </button> </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item active">
+                                        <div id="questionT">
+
+                                            <div class="AS"><img src="9.png" alt="Chania" width="100%"></div>
+
+                                            <!--YES/NO 버튼-->
+                                            <div width="100%"> <button type="button" class="btn btn-success">왜 뭐땜에????
+                                                </button> </div>
+                                            <div width="100%"> <button type="button" class="btn btn-danger"
+                                                    width="100%">(마상)ㅠ..... </button> </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item active">
+                                        <div id="questionJ">
+
+                                            <div class="AS"><img src="10.png" alt="Chania" width="100%"></div>
+                                            <!--YES/NO 버튼-->
+                                            <div width="100%"> <button type="button" class="btn btn-success"> 국어 영어 수학 한
+                                                    달치 계획 다 세웠지! </button> </div>
+                                            <div width="100%"> <button type="button" class="btn btn-danger"
+                                                    width="100%"> 그때 그때 필요한 공부대로! </button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item active">
+                                        <div id="questionJ">
+
+                                            <div class="AS"><img src="11.png" width="100%"></div>
+                                            <!--YES/NO 버튼-->
+                                            <div width="100%"> <button type="button" class="btn btn-success"> 그래도 나의 건강을
+                                                    위해 마스크 껴야지 ! </button> </div>
+                                            <div width="100%"> <button type="button" class="btn btn-danger"
+                                                    width="100%">바로 벗어 해방이다!!!!! </button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item active">
+                                        <div id="questionJ">
+
+                                            <div class="AS"><img src="12.png" width="100%"></div>
+                                            <!--YES/NO 버튼-->
+                                            <div width="100%"> <button type="button" class="btn btn-success"
+                                                    width="100%"> 다른 진주 냉면 집이 어디있을까? </button> </div>
+                                            <div width="100%"> <button type="button" class="btn btn-danger"
+                                                    width="100%"> 진주 비빔밥은 어때? 진주 비빔밥 먹으러가자!</button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="item active">
+                                        <div>
+
+                                            <div width="100%"> <button type="button" class="btn btn-success"
+                                                    id="result">결과보기</button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+
+
+
+</html>

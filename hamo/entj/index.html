@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My First Web Page</title>
+    <!--부트스트랩 다운로드-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@700&family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8560496054107183"
+    crossorigin="anonymous"></script>
+    <ins class="kakao_ad_area" style="display:none;"
+data-ad-unit = "DAN-hogKA8HoR2lwogLH"
+data-ad-width = "320"
+data-ad-height = "50"></ins>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</head>
+    <style>
+
+
+
+
+/*백그라운드 반복으로 이미지 불러오기*/ 
+
+
+
+
+    /*폰트 다 적용*/
+    body {
+        /*폰트 볼드로*/
+font-family: 'IBM Plex Sans KR', sans-serif;
+/*백그라운드 이미지 bg.png로 리핏 없이  */
+background-image: url("../bg.png");
+/*백그라운드 이미지 꽉차게 */
+background-size: cover;
+
+
+
+
+
+
+    }
+
+    
+
+
+
+  
+
+    /*yes/no 버튼 네모난 모양 약간 둥근 버튼으로 변경*/
+
+    .btn-success {
+        border-radius: 10px;
+    }
+
+    .btn-danger {
+        border-radius: 10px;
+    }
+
+    
+
+    /*yes/no 버튼 크기 HEIGHT 25프로 정도*/
+    .btn-success {
+        height: 45%;
+    }
+
+    .btn-danger {
+        height: 45%;
+    }
+
+    /*yes/no 버튼 색상 하얗게 투명하게*/
+
+    .btn-success {
+        border-color: rgb(255, 255, 255);
+        background-color: rgba(207, 206, 220, 0.831);
+        text-align: center;
+
+    }
+
+    .btn-danger {
+        border-color: rgb(255, 255, 255);
+        background-color: rgba(207, 206, 220, 0.831);
+    }
+
+    /* 마우스가 올라가 있을때 색상 변경*/
+    .btn-success:hover {
+        border-color: rgb(28, 27, 27);
+        background-color: rgba(207, 206, 220, 0.831);
+    }
+
+    .btn-danger:hover {
+        border-color: rgb(28, 27, 27);
+        background-color: rgba(207, 206, 220, 0.831);
+    }
+
+
+    /*yes/no 버튼 글자색 하얗게*/
+    .btn-success {
+        color: #545454;
+    }
+
+    .btn-danger {
+        color: #545454;
+    }
+
+    /*yes/no 버튼 글자 크기 조절*/
+   
+    /* 버튼 사이 간격 주기*/
+    .btn-success {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+        margin: auto;
+    }
+
+    .btn-danger {
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+/*반응형 웹으로 만들기*/
+ 
+
+    /*반은형 웹으러 슬라이드 이미지 크기 조절*/
+    @media screen and (max-width: 768px) {
+        .AS {
+            margin: 20px;
+            height: 60%;
+            width: 100%;
+          
+        }
+      
+    
+    
+    }
+    .btn-success {
+        margin-top: 10%;
+        font-size: 300%;
+        width: 100%;
+    }
+
+    .btn-danger {
+        font-size: 300%;
+        width: 100%;
+    }
+
+    /*반응형 웹으로 이미지 크기 조절*/
+    @media screen and (max-width: 768px) {
+        .AS {
+            height: 60%;
+            width: 100%;
+        }
+    }
+
+/*id가 BS인  하얀 동그란 형태로 변경*/
+ 
+    
+
+
+
+  
+/*id가 awq인 div  margin-top이 20% margin-bottom이 20%로 변경*/
+    #awq {
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+
+
+    /*yes/no 버튼 애니매이션*/
+    .btn-success {
+        animation: mymove 1s infinite;
+    }
+
+  .btn-danger {
+    animation: mymove 1s infinite;
+    }
+/*mymove  애니매이션  설정*/
+    @keyframes mymove {
+        0% {
+            background-color: rgba(207, 206, 220, 0.831);
+        }
+
+        50% {
+            background-color: rgba(207, 206, 220, 0.831);
+        }
+
+        100% {
+            background-color: rgba(207, 206, 220, 0.831);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .AS {
+            margin: 20px;
+            height: 60%;
+            width: 100%;
+            /*가운데정렬*/
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+          
+        }
+    }
+
+
+    ol,h1 {
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 20px;
+        size: 20px;
+    }
+
+    
+    /*question 가운데 정렬*/
+    #question {
+        text-align: center;
+    }
+</style>
+<script>
+  
+
+     // yes/no버튼이 서서히 나오는 애니매이션
+    $(document).ready(function () {
+        $(".btn-success").hide();
+        $(".btn-danger").hide();
+        $(".btn-success").fadeIn(1000);
+        $(".btn-danger").fadeIn(1000);
+    });
+
+    // 슬라이드 넘어갈시 이미지, yes/no버튼이 서서히 나오는 애니매이션
+    $(document).ready(function () {
+        $("#myCarousel").on("slide.bs.carousel", function () {
+            $(".AS").hide();
+            $(".btn-success").hide();
+            $(".btn-danger").hide();
+            $(".btn-success").fadeIn(1000);
+            $(".btn-danger").fadeIn(1000);
+            $(".AS").fadeIn(1000);
+        });
+    });
+        
+    // setInterval 슬라이드 넘어가는 시간 조절
+    $(document).ready(function () {
+        $("#myCarousel").carousel({
+            interval: 100000
+        });
+    });
+    // yes/no 버튼 클릭시 다음 슬라이드로 넘어가기
+    $(document).ready(function () {
+        $(".btn-success").click(function () {
+            $("#myCarousel").carousel("next");
+        });
+        $(".btn-danger").click(function () {
+            $("#myCarousel").carousel("next");
+        });
+    });
+    
+//id가 a인 곳의 버튼을 클릭시  변수 a에 1 증가
+    var a = 0;
+    $(document).ready(function () {
+        $("#a").click(function () {
+            a++;
+        });
+    });
+
+
+//id가 a인 곳의 버튼을 클릭시  0에서 1이면 폴더 a의 index.html로 이동,2에서 3이면 폴더 b의 index.html로 이동,4에서 5이면 폴더 c의 index.html로 이동,6에서 7이면 폴더 d의 index.html로 이동
+
+    
+
+$(document).ready(function () {
+        $("#result").click(function () {
+            if (a <2) {
+                location.href = "a/index.html";
+            } else if (2<a<4) {
+                location.href = "b/index.html";
+            } else if (3<a<6) {
+                location.href = "c/index.html";
+            } else if (5<a) {
+                location.href = "d/index.html";
+            }
+        });
+    });
+//id가 result인 곳의 버튼을 클릭시 0에서 1이면 폴더 a의 index.html로 이동,2에서 3이면 폴더 b의 index.html로 이동,4에서 5이면 폴더 c의 index.html로 이동,6에서 7이면 폴더 d의 index.html로 이동
+
+
+
+
+
+
+
+
+
+   
+
+
+
+</script>
+<style>
+ /*li의 위 아래 간격 주기 */
+
+ㄴ
+    /*page-header 가운데 정렬*/
+    .page-header {
+        text-align: center;
+    }
+    /*page-header */
+
+    .page-header {
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #ffb7fd;
+    }
+
+
+
+
+  
+</style>
+
+<body>
+<div id="awq">
+  <!--상단 심리테스트 타이틀 생성-->
+    <div class="co">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header">
+             S
+                </div>
+            </div>
+        </div>
+
+
+    <!--질문 14개  -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+                    <!-- Wrapper for slides -->
+
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div>
+                              <div class="AS"><img src="0.png" alt="Chania" width="100%"></div>
+
+                       
+                                <!--시작버튼-->
+                                <div class="share-text">친구에게 링크 공유하기</div>
+                                <ul class="share-btn">
+                                    <li onclick="shareFacebook();">
+                                      <img src="../facebook.png" />
+                                    </li>
+                                    <li>
+                                      <a id="kakaoLink" onclick="shareKakao();">
+                                        <img src="../kakao.png" />
+                                      </a>
+                                    </li>
+                                    <li onclick="shareCopy();" id="copy">
+                                      <img src="../copy.png" />
+                                    </li>
+                                  </ul>
+                        </div>
+                  
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+</html>
